@@ -1,14 +1,13 @@
-import React from 'react'
-
+import React from 'react';
 
 interface TopUpItemProps {
   type: 'desktop' | 'mobile'
 }
 
 export default function TopUpItem(props: TopUpItemProps) {
-  const {type} = props
+  const { type } = props;
 
-  if(type === 'desktop'){
+  if (type === 'desktop') {
     return (
       <div className="pb-50 d-md-block d-none">
         <h2 className="text-4xl fw-bold color-palette-1 text-start mb-10 mt-10">
@@ -18,7 +17,7 @@ export default function TopUpItem(props: TopUpItemProps) {
         </h2>
         <p className="text-lg color-palette-2 mb-0">Category: Mobile</p>
       </div>
-    )
+    );
   }
   return (
     <div className="row align-items-center">
@@ -34,5 +33,5 @@ export default function TopUpItem(props: TopUpItemProps) {
         <p className="text-sm color-palette-2 text-start mb-0">Category: Mobile</p>
       </div>
     </div>
-  )
+  );
 }
